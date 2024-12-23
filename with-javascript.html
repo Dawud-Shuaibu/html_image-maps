@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with JavaScript</title>
+</head>
+<body>
+    <!--
+        Image Maps with JavaScript
+    -->
+    <h1>Image Maps with JavaScript</h1>
+    <p>Click the computer, phone or coffee to perform a JavaScript function</p>
+    <img src="/images/workplace.jpg" alt="workspace" usemap="#workspace">
+    <map name="workspace">
+        <area shape="rect" coords="34, 44, 270, 350" alt="computer" onclick="computer()">
+        <area shape="rect" coords="290, 170, 335, 245" alt="phone" onclick="phone()">
+        <area shape="circle" coords="337, 300, 44" alt="coffee-mug" onclick="coffee()">
+    </map>
+
+    <script>
+        function computer() {
+            alert('You clicked the computer');
+        }
+        function phone() {
+            alert('You clicked the phone');
+        }
+        function coffee() {
+            alert('You clicked the coffee mug');
+        }
+    </script>
+</body>
+</html>
